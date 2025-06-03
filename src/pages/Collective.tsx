@@ -195,7 +195,7 @@ const Collective = () => {
                     Encrypted mnemonic package delivery across networks and physical planes. Your neurons, our highway.
                   </p>
                   <a 
-                    href="https://synapse-express.netlify.app/"
+                    href="https://synapse.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
