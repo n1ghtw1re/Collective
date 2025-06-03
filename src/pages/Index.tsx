@@ -13,7 +13,7 @@ const Index = () => {
     "name": "N1GHTW1RE",
     "description": "Digital Liberation Collective - Hackers, mystics, and digital dissidents fighting against surveillance capitalism",
     "url": "https://n1ghtw1re.neocities.org",
-    "logo": "https://lovable.dev/opengraph-image-p98pqg.png",
+    "logo": "public/lovable-uploads/n1ghtw1re-logo.jpg",
     "sameAs": [
       "https://bsky.app/profile/n1ghtw1re.neocities.org",
       "https://defcon.social/@n1ghtw1re"
