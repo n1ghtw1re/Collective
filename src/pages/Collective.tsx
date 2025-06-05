@@ -21,8 +21,19 @@ const Collective = () => {
                 This isn't a map. It's a living circuit. From underground music networks to technomancer dispatches, memory smugglers to glitch-art galleries — each click pulls you deeper into the world we're building. Step through. Stay sharp. The static is watching.
               </p>
             </section>
+ 
+            
+            <section>
+              <h2 className="font-glitch text-3xl text-white mb-6">CURRENT INITIATIVES</h2>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
+                  <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">The Bright Descent</h3>
+                  <p className="font-mono text-sm text-white/90">
+                    Coming Soon
+                  </p>
+                </div>
 
-            <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
+              <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
                   <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">2nd Amendment Weapons Emporium</h3>
                   <p className="font-mono text-sm text-white/90 mb-2">
                     The 2nd amendment isn't just for the rich and conservatives. Every citizen of Night City has the right to protect themselves from tyranny.
@@ -50,17 +61,7 @@ const Collective = () => {
                   >
                     Access BPM →
                   </a>
-                </div>    
-            
-            <section>
-              <h2 className="font-glitch text-3xl text-white mb-6">CURRENT INITIATIVES</h2>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
-                  <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">The Bright Descent</h3>
-                  <p className="font-mono text-sm text-white/90">
-                    Coming Soon
-                  </p>
-                </div>
+                </div>   
                 
                 <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
                   <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">Circuit Breach</h3>
