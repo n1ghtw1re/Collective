@@ -21,6 +21,36 @@ const Collective = () => {
                 This isn't a map. It's a living circuit. From underground music networks to technomancer dispatches, memory smugglers to glitch-art galleries — each click pulls you deeper into the world we're building. Step through. Stay sharp. The static is watching.
               </p>
             </section>
+
+            <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
+                  <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">2nd Amendment Weapons Emporium</h3>
+                  <p className="font-mono text-sm text-white/90 mb-2">
+                    The 2nd amendment isn't just for the rich and conservatives. Every citizen of Night City has the right to protect themselves from tyranny.
+                  </p>
+                  <a 
+                    href="https://2a.n1ghtw1re.com" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-xs text-cyberpunk-green hover:underline"
+                  >
+                    ACCESS 2nd Amendment →
+                  </a>
+                </div>
+
+            <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
+                  <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">BPM Couture Replicants</h3>
+                  <p className="font-mono text-sm text-white/90 mb-2">
+                    Where perfection is not born, but meticulously engineered. This exclusive atelier caters to only the most discerning clientele, offering bespoke Replicants crafted to surpass even the highest expectations.
+                  </p>
+                  <a 
+                    href="https://bpm.n1ghtw1re.com/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-xs text-cyberpunk-green hover:underline"
+                  >
+                    Access BPM →
+                  </a>
+                </div>    
             
             <section>
               <h2 className="font-glitch text-3xl text-white mb-6">CURRENT INITIATIVES</h2>
@@ -53,7 +83,7 @@ const Collective = () => {
                     Code Heroes was created to highlight the stories of technology pioneers who used their talents to make the world better—not just to accumulate wealth or power.
                   </p>
                   <a 
-                    href="https://code-heroes.lovable.app/"
+                    href="https://code-heroes.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -63,24 +93,32 @@ const Collective = () => {
                 </div>
                 
                 <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
-                  <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">The Collector Comic Collection App</h3>
-                  <p className="font-mono text-sm text-white/90">
-                    Coming Soon
-                  </p>
-                </div>
-                
-                <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
                   <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">Crazy Eddies Cyberdeck Emporium</h3>
                   <p className="font-mono text-sm text-white/90 mb-2">
                     Eddie's philosophy is simple: high-end tech shouldn't be locked behind corporate walls. Everyone deserves the chance to jack in with quality gear—especially if that gear might occasionally cause problems for the corps.
                   </p>
                   <a 
-                    href="https://crazy-eddies.netlify.app/"
+                    href="https://eddies.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
                   >
                     ACCESS CRAZY EDDIES →
+                  </a>
+                </div>
+
+                <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
+                  <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">Ellos Viven Optical</h3>
+                  <p className="font-mono text-sm text-white/90 mb-2">
+                    Welcome to Ellos Viven Optical, where luxury eyewear offers not just refined style, but the chance to uncover a hidden reality for those daring enough to look beyond the surface.
+                  </p>
+                  <a 
+                    href="https://ellos-viven.n1ghtw1re.com/"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="font-mono text-xs text-cyberpunk-green hover:underline"
+                  >
+                    ACCESS Ellos Viven Optical →
                   </a>
                 </div>
                 
@@ -105,7 +143,7 @@ const Collective = () => {
                     The Hacker's Tarot is a reimagining of the traditional major arcana for the digital age. Each card represents the forces, figures, and concepts that shape our technological landscape—from The User to The Global Citizen.
                   </p>
                   <a 
-                    href="https://the-hackers-tarot.lovable.app/"
+                    href="https://hackers-tarot.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -135,7 +173,7 @@ const Collective = () => {
                     Based in Siem Reap, Cambodia, INTERLINKED RECORDS is an independent label founded in the digital underground, operating at the intersection of dub techno, industrial soundscapes, and gothic synth experiments.
                   </p>
                   <a 
-                    href="https://interlinked-records.lovable.app/"
+                    href="https://interlinked.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -150,7 +188,7 @@ const Collective = () => {
                     Into Ideaspace is both a manifesto and a map—an urgent call to reclaim the vast terrain of human thought from the hands of those who seek to fence it off and sell it back to us. In an age when corporations patent dreams and algorithms rewrite reality, this book dares to ask: What if imagination were a human right?
                   </p>
                   <a 
-                    href="https://into-ideaspace.lovable.app/"
+                    href="https://ideaspace.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -165,7 +203,7 @@ const Collective = () => {
                     N1ghtw1re is an anonymous collective dedicated to empowering individuals to reclaim their privacy, autonomy, and freedom in an age dominated by surveillance, algorithms, and corporate control. N1ghtw1re is more than a website—it's a living hypersigil, a digital beacon for those ready to challenge the status quo and embrace the tools of liberation.
                   </p>
                   <a 
-                    href="https://n1ghtw1re.neocities.org"
+                    href="https://n1ghtw1re.com"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -180,12 +218,27 @@ const Collective = () => {
                     N1ghtw1re is a digital studio specializing in creative, privacy-focused, websites, applications, and media projects with a retro design and aesthetic. Our goal is to reclaim the internet from algorithms and return the net to the individual.
                   </p>
                   <a 
-                    href="https://n1ghtw1re-studios.lovable.app/"
+                    href="https://studio.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
                   >
                     ACCESS N1GHTW1RE STUDIOS →
+                  </a>
+                </div>
+
+                <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
+                  <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">The Running Man</h3>
+                  <p className="font-mono text-sm text-white/90 mb-2">
+                    Where justice is served with ratings and survival is the prize, convicted criminals must run for their lives in the ultimate televised deathmatch—where the only rule is to stay alive! This season, Ben Richards is on the run, but the stalkers are closing in… and the crowd wants blood!
+                  </p>
+                  <a 
+                    href="https://running-man.n1ghtw1re.com/"
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="font-mono text-xs text-cyberpunk-green hover:underline"
+                  >
+                    ACCESS The Running Man →
                   </a>
                 </div>
                 
@@ -210,7 +263,7 @@ const Collective = () => {
                     Now all restaurants are Taco Bell.
                   </p>
                   <a 
-                    href="https://taco-bell-sanangeles.netlify.app/"
+                    href="https://tacobell.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -225,7 +278,7 @@ const Collective = () => {
                     The ultimate Hollywood nightclub. We guarantee you'll be saying "I'll be back" after your first visit.
                   </p>
                   <a 
-                    href="https://tech-noir.netlify.app/"
+                    href="https://technoir.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -240,7 +293,7 @@ const Collective = () => {
                     The Don Stone is a Siem Reap-based electronic music producer and DJ known for underground warehouse techno, experimental bass, and dark ambient soundscapes.
                   </p>
                   <a 
-                    href="https://thedonstone.lovable.app/"
+                    href="https://thedonstone.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
@@ -255,7 +308,7 @@ const Collective = () => {
                     Deep dives into classic albums, thoughts on emerging scenes, explorations of the culture surrounding the music, and maybe the occasional rant.
                   </p>
                   <a 
-                    href="https://vinyl-violence.netlify.app/"
+                    href="https://vinyl-violence.n1ghtw1re.com/"
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="font-mono text-xs text-cyberpunk-green hover:underline"
