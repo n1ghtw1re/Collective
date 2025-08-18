@@ -166,14 +166,35 @@ const Index = () => {
         </section>
 
         {/* SYS_NEWS Section */}
-        <section className="py-16 bg-black/80">
-          <div className="container mx-auto px-4">
-            <div className="max-w-3xl mx-auto">
-              <h2 className="font-glitch text-3xl text-cyberpunk-green mb-6">SYS_NEWS</h2>
-              <SysNews />
+          {/* SYS_NEWS Section (commented out)
+          <section className="py-16 bg-black/80">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto">
+                <h2 className="font-glitch text-3xl text-cyberpunk-green mb-6">SYS_NEWS</h2>
+                <SysNews />
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+          */}
+
+          {/* Embedded SYS iframe */}
+          <section className="py-16 bg-black/80">
+            <div className="container mx-auto px-4">
+              <div className="max-w-3xl mx-auto">
+                <h2 className="font-glitch text-3xl text-cyberpunk-green mb-6">SYS_NEWS</h2>
+                <div className="w-full rounded-lg overflow-hidden" style={{background:'#111'}}>
+                  <iframe
+                    src="https://sys.n1ghtw1re.com"
+                    title="SYS_NEWS"
+                    width="100%"
+                    height="500"
+                    style={{ border: 'none', borderRadius: '8px', width: '100%', minHeight: 300, maxHeight: 600 }}
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
 
         {/* Contact Section */}
         <section className="py-16 bg-black/60">
