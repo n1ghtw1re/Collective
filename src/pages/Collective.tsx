@@ -25,6 +25,17 @@ const Collective = () => {
             
             <section>
               <h2 className="font-glitch text-3xl text-white mb-6">CURRENT INITIATIVES</h2>
+                {/* Embedded Collective Hub iframe */}
+                <div className="w-full my-8 rounded-lg overflow-hidden" style={{background:'#111'}}>
+                  <iframe
+                    src="https://collectivehub.n1ghtw1re.com/"
+                    title="Collective Hub"
+                    width="100%"
+                    height="600"
+                    style={{ border: 'none', borderRadius: '8px', width: '100%', minHeight: 400, maxHeight: 800 }}
+                    allowFullScreen
+                  />
+                </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="border border-white/20 p-4 hover:border-cyberpunk-green transition-colors">
                   <h3 className="font-glitch text-xl text-cyberpunk-green mb-2">The Bright Descent</h3>
