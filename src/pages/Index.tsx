@@ -1,3 +1,4 @@
+// ...existing code...
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Layout from '../components/layout/Layout';
@@ -182,13 +183,13 @@ const Index = () => {
             <div className="container mx-auto px-4">
               <div className="max-w-3xl mx-auto">
                 <h2 className="font-glitch text-3xl text-cyberpunk-green mb-6">SYS_NEWS</h2>
-                <div className="w-full rounded-lg overflow-hidden" style={{background:'#111'}}>
+                <div className="w-full rounded-lg overflow-hidden aspect-video" style={{background:'#111'}}>
                   <iframe
                     src="https://sys.n1ghtw1re.com"
                     title="SYS_NEWS"
                     width="100%"
-                    height="500"
-                    style={{ border: 'none', borderRadius: '8px', width: '100%', minHeight: 300, maxHeight: 600 }}
+                    height="100%"
+                    style={{ border: 'none', borderRadius: '8px', width: '100%', height: '100%', minHeight: 0 }}
                     allowFullScreen
                   />
                 </div>
