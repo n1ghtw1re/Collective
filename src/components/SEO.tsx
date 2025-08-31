@@ -18,7 +18,7 @@ const SEO: React.FC<SEOProps> = ({
   title,
   description,
   canonicalUrl,
-  ogImage = "https://lovable.dev/opengraph-image-p98pqg.png",
+  ogImage = "https://n1ghtw1re.com/lovable-uploads/n1ghtw1re_hero.jpg"
   ogType = "website",
   publishedTime,
   modifiedTime,
@@ -26,7 +26,7 @@ const SEO: React.FC<SEOProps> = ({
   structuredData
 }) => {
   const fullTitle = title.includes('N1GHTW1RE') ? title : `${title} | N1GHTW1RE`;
-  const siteUrl = 'https://n1ghtw1re.neocities.org';
+  const siteUrl = 'https://n1ghtw1re.com';
   const fullCanonicalUrl = canonicalUrl.startsWith('http') ? canonicalUrl : `${siteUrl}${canonicalUrl}`;
 
   const defaultStructuredData = {
@@ -84,20 +84,20 @@ const SEO: React.FC<SEOProps> = ({
         {JSON.stringify(structuredData || defaultStructuredData)}
       </script>
       
-      {/* 
-        GOOGLE ANALYTICS CODE SHOULD BE ADDED HERE:
-        Replace YOUR_GA_MEASUREMENT_ID with your actual Google Analytics 4 measurement ID
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GA_MEASUREMENT_ID"></script>
-        <script>
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'YOUR_GA_MEASUREMENT_ID');
-          `}
-        </script>
-      */}
+      {[
+        <script key="ga-async" async src="https://www.googletagmanager.com/gtag/js?id=G-78DGRBFKFF"></script>,
+        <script
+          key="ga-inline"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-78DGRBFKFF');
+            `,
+          }}
+        />
+      ]}
     </Helmet>
   );
 };
