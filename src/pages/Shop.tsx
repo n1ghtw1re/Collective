@@ -16,7 +16,16 @@ const Shop = () => (
           Take the transmission, carry the signal, and help fracture the panopticon—one download, one page, one manifesto at a time.
         </p>
       </div>
-      <div className="w-full my-8 rounded-lg overflow-hidden" style={{background:'#111', maxWidth: '100vw', marginLeft: 'calc(50% - 50vw)'}}>
+      <div
+        className="w-full my-8 rounded-lg overflow-hidden"
+        style={{
+          background: '#111',
+          maxWidth: '100vw',
+          position: 'relative',
+          left: '50%',
+          transform: 'translateX(-50%)',
+        }}
+      >
         <iframe
           src="https://shop.n1ghtw1re.com/"
           title="N1GHTW1RE Shop"
