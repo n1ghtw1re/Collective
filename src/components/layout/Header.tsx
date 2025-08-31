@@ -66,6 +66,12 @@ const Header: React.FC = () => {
             BLOG
           </Link>
           <Link 
+            to="/shop"
+            className={`font-mono hover:text-cyberpunk-green transition-colors ${isActive('/shop') ? 'text-cyberpunk-green' : 'text-white'}`}
+          >
+            SHOP
+          </Link>
+          <Link 
             to="/manifesto"
             className={`font-mono hover:text-cyberpunk-green transition-colors ${isActive('/manifesto') ? 'text-cyberpunk-green' : 'text-white'}`}
           >
@@ -115,6 +121,13 @@ const Header: React.FC = () => {
             onClick={closeMenu}
           >
             BLOG
+          </Link>
+          <Link 
+            to="/shop"
+            className={`font-glitch text-2xl hover:text-cyberpunk-green transition-colors ${isActive('/shop') ? 'text-cyberpunk-green' : 'text-white'}`}
+            onClick={closeMenu}
+          >
+            SHOP
           </Link>
           <Link 
             to="/manifesto"
