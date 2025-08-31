@@ -21,6 +21,16 @@ const Footer: React.FC = () => {
                 n1ghtw1re@proton.me
               </a>
             </div>
+            <div className="mt-2">
+              <a
+                href="https://shop.n1ghtw1re.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-mono text-xs text-cyberpunk-green hover:underline"
+              >
+                Support N1ghtw1re
+              </a>
+            </div>
           </div>
           
           <div>
@@ -83,7 +93,7 @@ const Footer: React.FC = () => {
           </div>
         </div>
         
-        <div className="mt-8 pt-4 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
+        <div className="mt-8 pt-4 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-2">
           <p className="font-mono text-xs text-white/60">
             &copy; {currentYear} N1GHTW1RE. All rights freely given.
           </p>
