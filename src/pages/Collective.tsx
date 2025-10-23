@@ -34,6 +34,9 @@ const Collective = () => {
                     height="600"
                     style={{ border: 'none', borderRadius: '8px', width: '100%', minHeight: 400, maxHeight: 800 }}
                     allowFullScreen
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    loading="lazy"
                   />
                 </div>
               

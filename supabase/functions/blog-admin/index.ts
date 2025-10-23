@@ -3,8 +3,10 @@ import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
 
 const corsHeaders = {
-  'Access-Control-Allow-Origin': '*',
-  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+  'Access-Control-Allow-Origin': 'https://n1ghtw1re.com',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type, x-session-token',
+  'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+  'Access-Control-Max-Age': '86400',
 }
 
 serve(async (req) => {
@@ -13,6 +15,18 @@ serve(async (req) => {
   }
 
   try {
+    // Verify session token for authentication
+    const sessionToken = req.headers.get('x-session-token')
+    if (!sessionToken) {
+      return new Response(
+        JSON.stringify({ error: 'Unauthorized' }),
+        { 
+          status: 401, 
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+        }
+      )
+    }
+
     const supabase = createClient(
       Deno.env.get('SUPABASE_URL') ?? '',
       Deno.env.get('SUPABASE_SERVICE_ROLE_KEY') ?? ''
@@ -39,7 +53,18 @@ serve(async (req) => {
     if (method === 'POST') {
       const { title, content, excerpt, published = false } = await req.json()
       
-      // Generate slug from title
+      // Input validation
+      if (!title || !content || title.length > 200 || content.length > 50000) {
+        return new Response(
+          JSON.stringify({ error: 'Invalid input' }),
+          { 
+            status: 400, 
+            headers: { ...corsHeaders, 'Content-Type': 'application/json' } 
+          }
+        )
+      }
+      
+      // Generate slug from title (sanitized)
       const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
       
       const { data: post, error } = await supabase
@@ -109,8 +134,9 @@ serve(async (req) => {
     return new Response('Method not allowed', { status: 405, headers: corsHeaders })
 
   } catch (error) {
+    console.error('Blog admin error:', error)
     return new Response(
-      JSON.stringify({ error: error.message }),
+      JSON.stringify({ error: 'Operation failed' }),
       { 
         status: 500, 
         headers: { ...corsHeaders, 'Content-Type': 'application/json' } 

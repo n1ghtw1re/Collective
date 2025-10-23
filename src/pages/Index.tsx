@@ -191,6 +191,9 @@ const Index = () => {
                     height="80vh"
                     style={{ border: 'none', borderRadius: '8px', width: '100%', height: '80vh', minHeight: 0 }}
                     allowFullScreen
+                    sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    loading="lazy"
                   />
                 </div>
               </div>
