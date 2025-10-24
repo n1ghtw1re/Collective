@@ -84,20 +84,8 @@ const SEO: React.FC<SEOProps> = ({
         {JSON.stringify(structuredData || defaultStructuredData)}
       </script>
       
-      {[
-        <script key="ga-async" async src="https://www.googletagmanager.com/gtag/js?id=G-78DGRBFKFF"></script>,
-        <script
-          key="ga-inline"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-78DGRBFKFF');
-            `,
-          }}
-        />
-      ]}
+      {/* Umami Analytics */}
+      <script defer src="https://cloud.umami.is/script.js" data-website-id="29fdb5a8-8c1a-42a5-9b24-e8c1e86b5396"></script>
     </Helmet>
   );
 };

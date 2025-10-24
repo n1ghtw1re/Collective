@@ -24,13 +24,14 @@ const Privacy = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="text-lg text-white mb-2">Analytics Data</h3>
-                  <p>We use Google Analytics and Google Search Console to understand how visitors use our site. This includes:</p>
+                  <p>We use Umami Analytics (a privacy-focused analytics platform) to understand how visitors use our site. This includes:</p>
                   <ul className="list-disc pl-6 mt-2 space-y-1">
                     <li>Pages visited and time spent on each page</li>
-                    <li>General geographic location (country/city level)</li>
-                    <li>Device and browser information</li>
-                    <li>Traffic sources and search terms</li>
+                    <li>General geographic location (country level only)</li>
+                    <li>Device and browser information (anonymized)</li>
+                    <li>Traffic sources (anonymized)</li>
                   </ul>
+                  <p className="mt-2 text-sm">Umami is GDPR-compliant and does not use cookies or track personal information.</p>
                 </div>
                 
                 <div>
@@ -57,9 +58,10 @@ const Privacy = () => {
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Sell your personal information to third parties</li>
                   <li>Share your data with advertisers or data brokers</li>
-                  <li>Use tracking technologies beyond basic analytics</li>
+                  <li>Use invasive tracking technologies or cookies</li>
                   <li>Collect unnecessary personal information</li>
                   <li>Store sensitive personal data on our servers</li>
+                  <li>Share analytics data with third-party corporations</li>
                 </ul>
               </div>
             </section>
@@ -68,8 +70,8 @@ const Privacy = () => {
               <h2 className="font-glitch text-2xl text-cyberpunk-green mb-4">THIRD-PARTY SERVICES</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg text-white mb-2">Google Analytics</h3>
-                  <p>We use Google Analytics to understand website usage. Google may collect and process data according to their privacy policy. You can opt out of Google Analytics tracking by using browser extensions or adjusting your browser settings.</p>
+                  <h3 className="text-lg text-white mb-2">Umami Analytics</h3>
+                  <p>We use Umami Analytics, a privacy-focused analytics platform that doesn't use cookies or track personal information. Umami collects only anonymized usage data to help us improve our website. You can learn more about Umami's privacy practices at <a href="https://umami.is/privacy" className="text-cyberpunk-green hover:underline">umami.is/privacy</a>.</p>
                 </div>
                 
                 <div>
@@ -85,7 +87,7 @@ const Privacy = () => {
               <ul className="list-disc pl-6 space-y-2">
                 <li>Request information about what data we have collected</li>
                 <li>Request deletion of your personal information</li>
-                <li>Opt out of analytics tracking</li>
+                <li>Browse our site without being tracked (analytics are anonymous)</li>
                 <li>Contact us with privacy concerns</li>
               </ul>
             </section>

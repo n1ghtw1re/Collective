@@ -15,7 +15,7 @@ const Cookies = () => {
                 <strong>Last Updated:</strong> {new Date().toLocaleDateString()}
               </p>
               <p className="mb-4">
-                This Cookie Policy explains how N1ghtw1re uses cookies and similar technologies when you visit our website.
+                This Cookie Policy explains how N1ghtw1re handles cookies and similar technologies when you visit our website. TL;DR: We use very few cookies and prioritize your privacy.
               </p>
             </section>
 
@@ -30,43 +30,44 @@ const Cookies = () => {
               <h2 className="font-glitch text-2xl text-cyberpunk-green mb-4">HOW WE USE COOKIES</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg text-white mb-2">Analytics Cookies</h3>
-                  <p>We use Google Analytics cookies to:</p>
+                  <h3 className="text-lg text-white mb-2">Analytics (Cookie-Free)</h3>
+                  <p>We use Umami Analytics, which is designed to respect your privacy:</p>
                   <ul className="list-disc pl-6 mt-2 space-y-1">
-                    <li>Understand how visitors interact with our website</li>
-                    <li>Analyze website traffic and performance</li>
-                    <li>Improve our content and user experience</li>
-                    <li>Track page views and session duration</li>
+                    <li>Does not use cookies or local storage</li>
+                    <li>Does not track users across websites</li>
+                    <li>Collects only anonymized, aggregated data</li>
+                    <li>GDPR compliant by design</li>
                   </ul>
                 </div>
                 
                 <div>
                   <h3 className="text-lg text-white mb-2">Essential Cookies</h3>
-                  <p>These cookies are necessary for the website to function properly and cannot be disabled.</p>
+                  <p>These cookies are necessary for the website to function properly and cannot be disabled. Currently, our website uses minimal essential cookies.</p>
                 </div>
               </div>
             </section>
 
             <section>
-              <h2 className="font-glitch text-2xl text-cyberpunk-green mb-4">THIRD-PARTY COOKIES</h2>
+              <h2 className="font-glitch text-2xl text-cyberpunk-green mb-4">THIRD-PARTY SERVICES</h2>
               <div className="space-y-4">
                 <div>
-                  <h3 className="text-lg text-white mb-2">Google Analytics</h3>
+                  <h3 className="text-lg text-white mb-2">Umami Analytics</h3>
                   <p className="mb-2">
-                    We use Google Analytics to analyze website usage. Google Analytics may set the following cookies:
+                    We use Umami Analytics, a privacy-focused analytics platform that:
                   </p>
                   <ul className="list-disc pl-6 space-y-1">
-                    <li><code>_ga</code> - Distinguishes unique users</li>
-                    <li><code>_ga_*</code> - Maintains session state</li>
-                    <li><code>_gid</code> - Distinguishes unique users</li>
+                    <li>Does not use cookies</li>
+                    <li>Does not collect personal information</li>
+                    <li>Does not track users across websites</li>
+                    <li>Is GDPR, CCPA, and PECR compliant</li>
                   </ul>
                   <p className="mt-2">
-                    For more information about Google Analytics cookies, visit:{' '}
-                    <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" 
+                    For more information about Umami's privacy practices, visit:{' '}
+                    <a href="https://umami.is/privacy" 
                        className="text-cyberpunk-green hover:underline" 
                        target="_blank" 
                        rel="noopener noreferrer">
-                      Google Analytics Cookie Usage
+                      Umami Privacy Policy
                     </a>
                   </p>
                 </div>
@@ -90,12 +91,12 @@ const Cookies = () => {
                 </div>
                 
                 <div>
-                  <h3 className="text-lg text-white mb-2">Opt-Out Tools</h3>
-                  <p>You can opt out of Google Analytics tracking by:</p>
+                  <h3 className="text-lg text-white mb-2">Privacy Settings</h3>
+                  <p>Since we use Umami Analytics (which doesn't use cookies), you don't need to opt out of tracking. However, you can still:</p>
                   <ul className="list-disc pl-6 mt-2 space-y-1">
-                    <li>Installing the Google Analytics Opt-out Browser Add-on</li>
-                    <li>Using privacy-focused browser extensions</li>
-                    <li>Adjusting your browser's privacy settings</li>
+                    <li>Use browser extensions to block JavaScript if desired</li>
+                    <li>Use privacy-focused browsers</li>
+                    <li>Contact us to request data deletion (though we collect minimal data)</li>
                   </ul>
                 </div>
               </div>
@@ -106,10 +107,11 @@ const Cookies = () => {
               <div className="bg-black/40 border border-cyberpunk-green p-6">
                 <p className="text-cyberpunk-green font-bold mb-4">WE PROMISE:</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>We only use cookies that are necessary for analytics and website functionality</li>
+                  <li>We use cookie-free analytics that respect your privacy</li>
                   <li>We never use tracking cookies for advertising purposes</li>
-                  <li>We do not sell or share cookie data with third parties</li>
-                  <li>We respect your privacy choices and preferences</li>
+                  <li>We do not collect or share personal data through cookies</li>
+                  <li>We respect your privacy choices and digital autonomy</li>
+                  <li>We use minimal essential cookies only when necessary</li>
                 </ul>
               </div>
             </section>
