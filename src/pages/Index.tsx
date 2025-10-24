@@ -51,9 +51,14 @@ const Index = () => {
                 N1ghtw1re is a digital hypersigil, a cyberpunk movement blending code, magic, and resistance to reclaim autonomy in a post-truth world.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link to="/about" className="px-6 py-3 bg-transparent border border-white text-white font-mono hover:bg-white/10 transition-colors">
+                <a 
+                  href="https://os.n1ghtw1re.com/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-transparent border border-white text-white font-mono hover:bg-white/10 transition-colors"
+                >
                   ENTER THE NETWORK
-                </Link>
+                </a>
                 <Link to="/manifesto" className="px-6 py-3 bg-transparent border border-cyberpunk-green text-cyberpunk-green font-mono hover:bg-cyberpunk-green/20 transition-colors">
                   READ THE MANIFESTO
                 </Link>
@@ -82,6 +87,26 @@ const Index = () => {
               <Link to="/about" className="font-mono text-cyberpunk-green hover:underline">
                 LEARN MORE ABOUT US →
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* n1ghtOS Section */}
+        <section className="py-16 bg-black/90">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="font-glitch text-3xl text-cyberpunk-green mb-6">n1ghtOS is Online</h2>
+              <p className="font-mono text-base mb-8 text-white/90">
+                N1ghtw1re operates as a network of nodes connected through shared values and common purpose. n1ghtOS is our attempt at collecting our knowledge and packaging it for hackers and magicians.
+              </p>
+              <a 
+                href="https://os.n1ghtw1re.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="font-mono text-cyberpunk-green hover:underline"
+              >
+                Access n1ghtOS →
+              </a>
             </div>
           </div>
         </section>
